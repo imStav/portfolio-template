@@ -1,0 +1,21 @@
+{
+  "name": "portfolio-template",
+  "version": "1.0.0",
+  "description": "A free and open source portfolio template, based on VitePress.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run dev",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "keywords": [
+    "portfolio"
+  ],
+  "author": "imStav",
+  "license": "ISC",
+  "dependencies": {
+    "vitepress": "^1.0.0-alpha.4",
+    "vue": "^3.2.37"
+  }
+}
