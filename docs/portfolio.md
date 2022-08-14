@@ -1,7 +1,7 @@
 <script setup>
-import test from './components/test.vue'
+import Card from './components/Card.vue'
 </script>
 
 # My Portfolio
 
-<test />
+<Card />
