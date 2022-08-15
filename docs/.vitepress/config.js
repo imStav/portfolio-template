@@ -9,6 +9,11 @@ export default {
         nav: [
             { text: 'Portfolio', link: '/portfolio' },
             { text: 'About', link: '/about' }
-        ]
+        ],
+
+        footer: {
+            message: 'Released under the MIT License.',
+            copyright: 'Copyright © 2022-present John Doe'
+          }
     }
   }
