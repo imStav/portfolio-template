@@ -1,5 +1,5 @@
 <script setup>
-import Card from './.vitepress/theme/components/Card.vue'
+import Card from '../Card.vue'
 </script>
 
 # My Portfolio

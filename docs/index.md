@@ -6,8 +6,8 @@ hero:
   text: A Full-Stack web developer
   tagline: Lorem ipsum...
   image:
-    src: /.vitepress/theme/cube.png
-    alt: Cube
+    src: 
+    alt: Cub
   actions:
     - theme: brand
       text: My Portfolio

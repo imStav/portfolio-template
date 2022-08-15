@@ -12,8 +12,8 @@ export default {
         ],
 
         footer: {
-            message: 'Released under the MIT License.',
+            message: 'Your message here',
             copyright: 'Copyright © 2022-present John Doe'
           }
     }
-  }
+}
