@@ -5,9 +5,9 @@ hero:
   name: Hi! I am John Doe
   text: A Full-Stack web developer
   tagline: Lorem ipsum...
-#   image:
-#     src: /.vitepress/theme/cube.png
-#     alt: Cube
+  image:
+    src: /.vitepress/theme/cube.png
+    alt: Cube
   actions:
     - theme: brand
       text: My Portfolio
@@ -27,6 +27,3 @@ features:
     title: UI / UX
     details: Lorem ipsum...
 ---
-
-<!-- # Hi! I am John Doe 
-> I am a `Full-Stack` web developer -->

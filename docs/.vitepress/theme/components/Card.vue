@@ -2,11 +2,11 @@
 import { getRepos } from '/api/getGitRepos'
 import { ref, onMounted } from 'vue'
 
-const repos = ref("");
+const repos = ref("")
 
 onMounted(async () => {
-    const getReps = await getRepos();
-    repos.value = getReps;
+    const getReps = await getRepos()
+    repos.value = getReps
 });
 </script>
 
@@ -17,12 +17,12 @@ onMounted(async () => {
         <p>{{ repo.description }}</p>
         <a :href="repo.homepage" target="_blank">{{ repo.homepage }}</a>
 
-        <p v-if="repo.language == 'Vue'" class="lang-vue">{{ repo.language }}</p>
+        <!-- <p v-if="repo.language == 'Vue'" class="lang-vue">{{ repo.language }}</p>
         <p v-else-if="repo.language == 'HTML'" class="lang-html">{{ repo.language }}</p>
         <p v-else-if="repo.language == 'CSS'" class="lang-css">{{ repo.language }}</p>
         <p v-else-if="repo.language == 'JavaScript'" class="lang-js">{{ repo.language }}</p>
         <p v-else-if="repo.language == 'PHP'" class="lang-php">{{ repo.language }}</p>
-        <p v-else-if="repo.language == 'Python'" class="lang-py">{{ repo.language }}</p>
+        <p v-else-if="repo.language == 'Python'" class="lang-py">{{ repo.language }}</p> -->
     </div>
 </div>
 </template>

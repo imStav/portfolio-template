@@ -4,7 +4,6 @@
   "description": "A free and open source portfolio template, based on VitePress.",
   "main": "index.js",
   "scripts": {
-    "dev": "npm run dev",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
