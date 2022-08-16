@@ -7,23 +7,23 @@ hero:
   tagline: Lorem ipsum...
   image:
     src: 
-    alt: Cub
+    alt: Place an image here
   actions:
     - theme: brand
       text: My Portfolio
       link: /portfolio
     - theme: alt
-      text: View on GitHub
+      text: Visit my GitHub
       link: https://github.com/imStav
 
 features:
   - icon: ⚡️
     title: Front-End stacks
-    details: Lorem ipsum...
+    details: Vue 3, Vite, SCSS, Tailwind CSS...
   - icon: 🛠️
     title: Back-End stacks
-    details: Lorem ipsum...
+    details: Node.js, Python, SQL...
   - icon: 🎨
     title: UI / UX
-    details: Lorem ipsum...
+    details: Figma, Framer...
 ---

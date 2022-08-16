@@ -12,22 +12,37 @@ onMounted(async () => {
 
 <template>
 <div class="grid">
-    <div v-for="repo in repos" class="card">
-        <p class="card-heading">{{ repo.name }}</p>
-        <p>{{ repo.description }}</p>
-        <a :href="repo.homepage" target="_blank">{{ repo.homepage }}</a>
+    <div v-for="repo in repos" :key="repo.id" class="card">
+        <div v-if="repo.private === false" class="wrapper">
+            <div class="card-heading">
+                <p class="leading-smallest">{{ repo.name }}</p>
+                <a :href="repo.html_url" target="_blank">{{ repo.svn_url.slice(8) }}</a>
+            </div>
 
-        <p v-if="repo.language == 'Vue'" class="lang-vue">{{ repo.language }}</p>
-        <p v-else-if="repo.language == 'HTML'" class="lang-html">{{ repo.language }}</p>
-        <p v-else-if="repo.language == 'CSS'" class="lang-css">{{ repo.language }}</p>
-        <p v-else-if="repo.language == 'JavaScript'" class="lang-js">{{ repo.language }}</p>
-        <p v-else-if="repo.language == 'PHP'" class="lang-php">{{ repo.language }}</p>
-        <p v-else-if="repo.language == 'Python'" class="lang-py">{{ repo.language }}</p>
+            <div class="card-body">
+                <p>{{ repo.description }}</p>
+            </div>
+
+            <div class="card-footer">
+                <a :href="repo.homepage" target="_blank">{{ repo.homepage }}</a>
+
+                <p v-if="repo.language == 'Vue'" class="lang-vue">{{ repo.language }}</p>
+                <p v-else-if="repo.language == 'HTML'" class="lang-html">{{ repo.language }}</p>
+                <p v-else-if="repo.language == 'CSS'" class="lang-css">{{ repo.language }}</p>
+                <p v-else-if="repo.language == 'JavaScript'" class="lang-js">{{ repo.language }}</p>
+                <p v-else-if="repo.language == 'PHP'" class="lang-php">{{ repo.language }}</p>
+                <p v-else-if="repo.language == 'Python'" class="lang-py">{{ repo.language }}</p>
+            </div>
+        </div>
     </div>
 </div>
 </template>
 
 <style scoped>
+a {
+    font-size: 1rem;
+}
+
 .grid {
     margin-block: 2rem;
     gap: 2rem;
@@ -47,6 +62,13 @@ onMounted(async () => {
     font-weight: 700;
 }
 
+.leading-smallest {
+    margin-bottom: 0;
+}
+.card-body {
+    margin-block: 1rem;
+}
+
 .lang-vue,
 .lang-html,
 .lang-css,
@@ -55,13 +77,13 @@ onMounted(async () => {
 .lang-py {
     font-size: .7rem;
     padding: 0 1rem;
-    border-radius: .5rem;
+    border-radius: 100rem;
     width: fit-content;
 }
 
 .lang-vue {
     background-color: #24a76618;
-    border: 1px solid #24a76588;
+    border: 1px solid #24a76688;
 }
 
 .lang-html {
@@ -87,10 +109,6 @@ onMounted(async () => {
 .lang-py {
     background-color: #243ca718;
     border: 1px solid #243ca788;
-}
-
-.card:has(p) {
-    background-color: red;
 }
 
 @media screen and (max-width: 500px) {

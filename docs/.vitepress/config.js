@@ -11,6 +11,10 @@ export default {
             { text: 'About', link: '/about' }
         ],
 
+        socialLinks: [
+            { icon: 'github', link: 'https://github.com/imStav' }
+        ],
+
         footer: {
             message: 'Your message here',
             copyright: 'Copyright © 2022-present John Doe'
