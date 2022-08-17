@@ -5,8 +5,7 @@ import { ref, onMounted } from 'vue'
 const repos = ref("")
 
 onMounted(async () => {
-    const getReps = await getRepos()
-    repos.value = getReps
+    repos.value = await getRepos()
 })
 </script>
 
