@@ -1,5 +1,5 @@
 <script setup>
-import { getRepos } from './docs/api/getGitRepos'
+import { getRepos } from '../api/getGitRepos'
 import { ref, onMounted } from 'vue'
 
 const repos = ref("")
@@ -16,7 +16,7 @@ onMounted(async () => {
         <div v-if="repo.private === false" class="wrapper">
             <div class="card-heading">
                 <p class="leading-smallest">{{ repo.name }}</p>
-                <a :href="repo.html_url" target="_blank">{{ repo.svn_url.slice(8) }}</a>
+                <a :href="repo.html_url" target="_blank">{{ repo.html_url.slice(8) }}</a>
             </div>
 
             <div class="card-body">
