@@ -81,32 +81,32 @@ a {
 }
 
 .lang-vue {
-    background-color: #24a76618;
+    background-color: #24a76638;
     border: 1px solid #24a76688;
 }
 
 .lang-html {
-    background-color: #a73e2418;
+    background-color: #a73e2438;
     border: 1px solid #a73e2488;
 }
 
 .lang-css {
-    background-color: #246ca718;
+    background-color: #246ca738;
     border: 1px solid #246ca788;
 }
 
 .lang-js {
-    background-color: #a5a72418;
+    background-color: #a5a72438;
     border: 1px solid #a5a72488;
 }
 
 .lang-php {
-    background-color: #3824a718;
+    background-color: #3824a738;
     border: 1px solid #3824a788;
 }
 
 .lang-py {
-    background-color: #243ca718;
+    background-color: #243ca738;
     border: 1px solid #243ca788;
 }
 

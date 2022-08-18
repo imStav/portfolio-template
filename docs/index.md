@@ -7,7 +7,7 @@ hero:
   tagline: Lorem ipsum...
   image:
     src: 
-    alt: Place an image here
+    alt: Hi
   actions:
     - theme: brand
       text: My Portfolio
