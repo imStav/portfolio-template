@@ -55,6 +55,6 @@ On this template, there is also a `sidebar` (not displayed on the `homepage`). T
 
 ## Official docs
 
-[VitePress](https://vitepress.vuejs.org/)
-[Vue.js 3](https://vuejs.org/)
-[Github API](https://docs.github.com/en/developers)
+- [VitePress](https://vitepress.vuejs.org/)
+- [Vue.js 3](https://vuejs.org/)
+- [Github API](https://docs.github.com/en/developers)
