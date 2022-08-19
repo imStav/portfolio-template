@@ -6,8 +6,6 @@ export async function getRepos() {
       const response = await fetch(`https://api.github.com/users/${username}/repos`);
       const repos = await response.json();
       return repos;
-
-    } catch (e) {
-      console.log(e);
-    }
-  }
+    } 
+    catch (e) { console.log(e); }
+}

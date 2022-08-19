@@ -1,4 +1,5 @@
 # Skills
+
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
@@ -7,6 +8,7 @@
 `Vue 3` + `Vite` as a build tool is actually the main combo I use to create modern SPA, fast and scalable Front-End apps.
 
 `Pinia`
+
 > For state management.
 
 `VitePress` 
@@ -33,6 +35,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 ```
 
 `Tailwind CSS`
+
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 
@@ -43,9 +46,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 `Express` `Nest`
+
 > Node.js frameworks
 
 `Sequelize`
+
 > ORM
 
 `Python 3`
@@ -58,6 +63,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 
 
 ## UI / UX
+
 > Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 `Figma`

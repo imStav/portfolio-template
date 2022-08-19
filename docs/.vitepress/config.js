@@ -14,7 +14,7 @@ export default {
             { text: 'About', link: '/about' }
         ],
 
-        // Add your socials here
+        // Add your /modify socials here
         socialLinks: [
             { icon: 'github', link: 'https://github.com/' },
             { icon: 'linkedin', link: 'https://www.linkedin.com/' },
