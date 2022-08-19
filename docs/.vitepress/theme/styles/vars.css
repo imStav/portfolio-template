@@ -3,38 +3,13 @@
  * -------------------------------------------------------------------------- */
 
  :root {
-  --vp-c-accent: #23ecfa;
-  --vp-c-brand: #81c2ff;
-  --vp-c-brand-light: #16c5d1;
-  --vp-c-brand-lighter: #23ecfa;
-  --vp-c-brand-dark: #23ecfa;
-  --vp-c-brand-darker: #23ecfa;
-  --vp-c-text-code: #2c3e50;
-  --vp-code-block-bg: rgba(125, 125, 125, 0.06);
-  --vp-code-block-hover-bg: rgba(125, 125, 125, 0.1);
-  --vp-c-bg-mute: #f5f5f5;
-  --vp-custom-block-tip-border: var(--vp-c-brand);
-  --vp-custom-block-tip-text: var(--vp-c-brand-dark);
-  --vp-custom-block-tip-bg: transparent;
-  --vp-custom-block-tip-code-bg: var(--vp-custom-block-tip-bg);
-  --vp-code-copy-code-bg: initial;
-  --vp-code-copy-code-hover-bg: var(--vp-custom-block-details-text);
-}
-
-.dark {
-  --vp-c-bg: #16171a;
-  --vp-c-accent: #09afc5;
-  --vp-c-brand: #7e7e7e;
-  --vp-c-brand-light: #555555;
-  --vp-c-brand-lighter: #6098ff;
-  --vp-c-brand-dark: #a6c1f5;
-  --vp-c-brand-darker: #b7d0ff;
-  --vp-code-block-bg: rgba(0, 0, 0, 0.2);
-  --vp-c-text-code: #f5f7fa;
-  --vp-c-bg-mute: #2d2d2d;
-  --vp-code-copy-code-bg: initial;
-  --vp-code-copy-code-hover-bg: rgba(255, 255, 255, 0.05);
-  --vp-c-hero: #000000;
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-lightest: #bcc0ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
+  --vp-c-brand-dimm: rgba(100, 108, 255, 0.08);
 }
 
 /**
@@ -59,9 +34,18 @@
 
 :root {
   --vp-home-hero-name-color: transparent;
-  --vp-home-hero-name-background: linear-gradient(347deg, #23ecfa 30%, #2f78ff);
-  --vp-home-hero-image-background-image: linear-gradient(45deg, #1fcaf560 30%, #f517ab60);
-  --vp-home-hero-image-filter: blur(30px);
+  --vp-home-hero-name-background: -webkit-linear-gradient(
+    120deg,
+    #bd34fe 30%,
+    #41d1ff
+  );
+
+  --vp-home-hero-image-background-image: linear-gradient(
+    -45deg,
+    #bd34fe 50%,
+    #47caff 50%
+  );
+  --vp-home-hero-image-filter: blur(40px);
 }
 
 @media (min-width: 640px) {
@@ -74,4 +58,51 @@
   :root {
     --vp-home-hero-image-filter: blur(72px);
   }
+}
+
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-darker);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+.dark {
+  --vp-custom-block-tip-border: var(--vp-c-brand);
+  --vp-custom-block-tip-text: var(--vp-c-brand-lightest);
+  --vp-custom-block-tip-bg: var(--vp-c-brand-dimm);
+}
+
+/**
+ * VitePress: Custom fix
+ * -------------------------------------------------------------------------- */
+
+/*
+  Use lighter colors for links in dark mode for a11y.
+  Also specify some classes twice to have higher specificity
+  over scoped class data attribute.
+*/
+.dark .vp-doc a,
+.dark .vp-doc a > code,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink:hover,
+.dark .VPNavBarMenuLink.VPNavBarMenuLink.active,
+.dark .link.link:hover,
+.dark .link.link.active,
+.dark .edit-link-button.edit-link-button,
+.dark .pager-link .title {
+  color: var(--vp-c-brand-lighter);
+}
+
+.dark .vp-doc a:hover,
+.dark .vp-doc a > code:hover {
+  color: var(--vp-c-brand-lightest);
+  opacity: 1;
+}
+
+/* Transition by color instead of opacity */
+.dark .vp-doc .custom-block a {
+  transition: color 0.25s;
 }

@@ -4,10 +4,10 @@ layout: home
 hero:
   name: Hi! I am John Doe
   text: A Full-Stack web developer
-  tagline: Lorem ipsum...
+  tagline: 
   image:
     src: 
-    alt: Hi
+    alt: ⚡
   actions:
     - theme: brand
       text: My Portfolio
