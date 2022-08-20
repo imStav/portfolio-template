@@ -18,11 +18,11 @@ export async function getRepos() {
     let username = 'imStav'
 
     try {
-      const response = await fetch(`https://api.github.com/users/${username}/repos`);
-      const repos = await response.json();
-      return repos;
+      const response = await fetch(`https://api.github.com/users/${username}/repos`)
+      const repos = await response.json()
+      return repos
     } 
-    catch (e) { console.log(e); }
+    catch (e) { console.log(e) }
 }
 ```
 
