@@ -43,16 +43,17 @@ a {
 }
 
 .grid {
-    margin-block: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    place-items: center;
     gap: 2rem;
-    column-count: 2;
 }
 
 .card {
+    flex-basis: calc(50% - 1rem);
     border: 1px solid #80808088;
     border-radius: .5rem;
     padding: .1rem 1rem;
-    margin-bottom: 2rem;
     height: fit-content;
 }
 
@@ -112,7 +113,12 @@ a {
 
 @media screen and (max-width: 500px) {
     .grid {
+        display: block;
         column-count: 1;
+    }
+
+    .card {
+        margin-bottom: 2rem;
     }
 }
 </style>
