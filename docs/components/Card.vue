@@ -45,7 +45,6 @@ a {
 .grid {
     display: flex;
     flex-flow: row wrap;
-    place-items: center;
     gap: 2rem;
 }
 
