@@ -1,5 +1,21 @@
 # Portfolio template
 
+## Get started
+
+> Get packages
+
+``` bash
+npm install
+```
+
+> Run the dev server
+
+``` bash
+npm run docs:dev
+```
+
+*These commands can be found in the `package.json` file @ `"scripts"`*
+
 ## The project
 
 This portfolio template aims to deliver an easy to use, ready-to-go and minimal (but customizable) website for developers. Fully responsive (mobile first!).
