@@ -18,6 +18,11 @@ npm run docs:dev
 
 ## The project
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="/docs/assets/portfolio-template_dark_preview.png">
+  <img alt="Portfolio preview in light and dark color mode." src="/docs/assets/portfolio-template_light_preview.png">
+</picture>
+
 This portfolio template aims to deliver an easy to use, ready-to-go and minimal (but customizable) website for developers. Fully responsive (mobile first!).
 
 It provides a `homepage` with a `navbar`. The homepage has a `hero section` with 2 `call-to-action buttons` (1 leads to the portfolio, the ohter to your Github).
