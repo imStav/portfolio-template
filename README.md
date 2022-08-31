@@ -51,9 +51,13 @@ export async function getRepos() {
 
 A free section to let you describe yourself. Contains 2 sub-sections **Work experiences** and **Education & Certifications**.
 
-Find more information on how to configure / customize the navbar here: [VitePress naviagation links](https://vitepress.vuejs.org/guide/theme-nav#navigation-links).
+> Of course you can add more links on the navbar, even drop-down menus
+
+📚 Find more information on how to configure / customize the navbar here: [VitePress navigation links documentation](https://vitepress.vuejs.org/guide/theme-nav#navigation-links).
+
 
 At the right of those links, there is a **toggle button** for `dark / light mode`.
+
 
 You can also expose / modify your socials links in the `navbar`. To customize this part, just go to `/docs/.vitepress/config.js` at `socialLinks` wich is an array of objects:
 
@@ -65,8 +69,13 @@ socialLinks: [
     { icon: 'twitter', link: 'https://twitter.com/' }
 ]
 ```
+📚 [VitePress social links documentation](https://vitepress.vuejs.org/config/theme-configs#sociallinks).
+
 
 On this template, there is also a `sidebar` (not displayed on the `homepage`). To access and customize data, go to `/docs/.vitepress/config.js` at `sidebar`.
+
+📚 [VitePress sidebar documentation](https://vitepress.vuejs.org/guide/theme-sidebar).
+
 
 ### Technologies
 
