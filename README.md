@@ -1,4 +1,4 @@
-# Portfolio template
+# VitePress portfolio template
 
 ## Get started
 
@@ -50,6 +50,8 @@ export async function getRepos() {
 - **About**
 
 A free section to let you describe yourself. Contains 2 sub-sections **Work experiences** and **Education & Certifications**.
+
+Find more information on how to configure / customize the navbar here: [VitePress naviagation links](https://vitepress.vuejs.org/guide/theme-nav#navigation-links).
 
 At the right of those links, there is a **toggle button** for `dark / light mode`.
 
