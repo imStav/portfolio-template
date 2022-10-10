@@ -12,7 +12,7 @@ onMounted(async () => {
 <template>
 <div class="grid">
     <div v-for="repo in repos" :key="repo.id" class="card">
-        <div v-if="repo.private === false" class="wrapper">
+        <div v-if="repo.private === false">
             <div class="card-heading">
                 <p class="leading-smallest">{{ repo.name }}</p>
                 <a :href="repo.html_url" target="_blank">{{ repo.html_url.slice(8) }}</a>
@@ -24,13 +24,7 @@ onMounted(async () => {
 
             <div class="card-footer">
                 <a :href="repo.homepage" target="_blank">{{ repo.homepage }}</a>
-
-                <p v-if="repo.language == 'Vue'" class="lang-vue">{{ repo.language }}</p>
-                <p v-else-if="repo.language == 'HTML'" class="lang-html">{{ repo.language }}</p>
-                <p v-else-if="repo.language == 'CSS'" class="lang-css">{{ repo.language }}</p>
-                <p v-else-if="repo.language == 'JavaScript'" class="lang-js">{{ repo.language }}</p>
-                <p v-else-if="repo.language == 'PHP'" class="lang-php">{{ repo.language }}</p>
-                <p v-else-if="repo.language == 'Python'" class="lang-py">{{ repo.language }}</p>
+                <p v-if="repo.language" class="language">{{ repo.language }}</p>
             </div>
         </div>
     </div>
@@ -68,46 +62,13 @@ a {
     margin-block: 1rem;
 }
 
-.lang-vue,
-.lang-html,
-.lang-css,
-.lang-js,
-.lang-php,
-.lang-py {
+.language {
     font-size: .7rem;
     padding: 0 1rem;
     border-radius: 100rem;
     width: fit-content;
-}
-
-.lang-vue {
-    background-color: #24a76638;
-    border: 1px solid #24a76688;
-}
-
-.lang-html {
-    background-color: #a73e2438;
-    border: 1px solid #a73e2488;
-}
-
-.lang-css {
-    background-color: #246ca738;
-    border: 1px solid #246ca788;
-}
-
-.lang-js {
-    background-color: #a5a72438;
-    border: 1px solid #a5a72488;
-}
-
-.lang-php {
-    background-color: #3824a738;
-    border: 1px solid #3824a788;
-}
-
-.lang-py {
-    background-color: #243ca738;
-    border: 1px solid #243ca788;
+    background-color: #2243d438;
+    border: 1px solid #2243d488;
 }
 
 @media screen and (max-width: 500px) {
